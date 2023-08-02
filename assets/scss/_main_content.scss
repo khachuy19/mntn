@@ -1,0 +1,101 @@
+.position-absolute-wrapper {
+    position: relative;
+
+    #main-content {
+        width: 100%;
+        background:
+            linear-gradient(180deg, #0B1D26 0%, #0B1D26 100%) no-repeat left 400px/100%,
+            linear-gradient(180deg, rgba(11, 29, 38, 0.00) 0%, #0B1D26 60.28%) no-repeat left top/100% 400px;
+        position: absolute;
+        top: -400px;
+        z-index: 10;
+
+        .container {
+            width: 78%;
+            display: flex;
+            margin: 0 auto;
+            flex-direction: column;
+
+            .content-list {
+                margin-top: 10%;
+                display: flex;
+                flex-direction: column;
+
+                .content-item {
+                    display: flex;
+                    padding: 78px 0;
+
+                    .content-post {
+                        display: flex;
+                        justify-items: center;
+                        align-items: center;
+                        position: relative;
+
+
+                        .post-item {
+                            flex: 1 0 60%;
+                            margin-left: 110px;
+
+                            .big-number {
+                                margin: 0;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                font-size: 180px;
+                                font-weight: 700;
+                                opacity: 0.10000000149011612;
+                            }
+
+
+                            .post-title {
+                                margin: 22px 70px 22px 0;
+                                font-family: $font-chronicle-display, serif;
+                                font-size: 4.6rem;
+                                font-weight: 600;
+                            }
+
+                            .post-text {
+                                margin: 0 80px 22px 0;
+                                font-size: 1.5rem;
+                                font-weight: 500;
+                                line-height: 25px;
+                            }
+                        }
+                    }
+
+                    .content-img-wrapper {
+                        flex: 0 0 38%;
+                    }
+
+                    .content-img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .content-item:nth-child(1) {
+                    margin-top: -78px;
+                }
+
+                .content-item:nth-child(2) {
+                    display: flex;
+                    flex-direction: row-reverse;
+
+                    .content-post {
+                        margin-left: 84px;
+
+                        .post-title {
+                            margin: 22px 0px 22px 0px;
+                        }
+
+                        .post-text {
+                            margin: 0 0px 22px 0px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}

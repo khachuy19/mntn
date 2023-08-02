@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Chronicle Display";
+    src: url("../fonts/Chronicle\ Display\ Light\ Italic.otf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Chronicle Display";
+    src: url("../fonts/Chronicle\ Display\ Semibold.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Light.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-ExtraBold.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+.heading-w-rline {
+    position: relative;
+    margin: 0 80px;
+    color: #FBD784;
+    font-family: $font-gilroy;
+    font-size: 1.4rem;
+    line-height: 16px;
+    letter-spacing: 6px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.heading-w-rline::before {
+    position: absolute;
+    left: -80px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 60px;
+    border-bottom: 2px solid #FBD784;
+}
+
+.arrow-button {
+    height: 24px;
+    line-height: 24px;
+    display: flex;
+    align-content: center;
+    color: $white-color;
+
+    .link {
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: currentColor;
+        padding-right: 16px;
+    }
+
+}
+
+.yellow{
+    color: #FBD784 !important;
+}
