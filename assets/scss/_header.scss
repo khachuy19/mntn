@@ -35,8 +35,7 @@
         
         }
         .nav-link{
-            font-family: Gilroy, serif;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 700;
             color: $white-color;
             text-decoration: none;
@@ -54,8 +53,7 @@
         }
         .user-link {
             display: inline-block;
-            font-family: Gilroy,serif;
-            font-size: 1.7rem;
+            font-size: 1.6rem;
             font-weight: 700;
             text-decoration: none;
             color: $white-color;
@@ -82,7 +80,7 @@
                 transform: rotate(90deg);
                 -webkit-transform-origin: 5%;
                 transform-origin: 5%;
-                font-size: 1.7rem;
+                font-size: 1.6rem;
                 font-weight: 700;
                 margin: 0 0;
             }
@@ -90,7 +88,9 @@
                 margin-top: 66px;   
             }
             .social-link{
-                padding: 12px 0;
+                img{
+                    padding: 10px 20px 10px 0;
+                }
             }
         }
         .introduce{
@@ -133,7 +133,7 @@
                             color: $white-color;
                             text-decoration: none;
                             padding: 20px 0px;
-                            font-size: 1.8rem;
+                            font-size: 1.6rem;
                             font-weight: 600;
                         }
                     }

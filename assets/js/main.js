@@ -8,6 +8,7 @@ const hoverLine = $(".hover-line");
 const activeSliderItem = $(".slider-item.active");
 const contentItems = $$(".content-item");
 const sliderWrapper = $(".wrapper");
+const scrollDownBtn = $(".introduce .arrow-button");
 const aElement = $$("a");
 
 window.addEventListener("DOMContentLoaded", function () {
@@ -35,6 +36,9 @@ window.addEventListener("DOMContentLoaded", function () {
   const transBack = () => {
     sliderWrapper.style.transform = "translate(0%, -50%)";
   }
+
+  //
+  scrollDownBtn.onclick = () => contentItems[0].scrollIntoView();
 
   ///handle slider click change the size
   const handleMouseMove = function () {

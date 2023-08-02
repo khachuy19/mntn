@@ -7,7 +7,7 @@
 }
 
 html {
-  font-family: Gilroy, serif;
+  font-family: "Gilroy-Medium", Gilroy, serif;
   color: #fff;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -356,14 +356,20 @@ template {
 @font-face {
   font-family: "Gilroy";
   src: url("../fonts/Gilroy-ExtraBold.otf");
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gilroy-Medium"), url("../fonts/Gilroy-Medium.woff") format("woff");
 }
 .heading-w-rline {
   position: relative;
   margin: 0 80px;
   color: #FBD784;
-  font-family: Gilroy, serif;
+  font-family: "Gilroy-Medium", Gilroy, serif;
   font-size: 1.4rem;
   line-height: 16px;
   letter-spacing: 6px;
@@ -382,8 +388,9 @@ template {
 }
 
 .arrow-button {
-  height: 24px;
-  line-height: 24px;
+  width: fit-content;
+  height: 18px;
+  line-height: 18px;
   display: flex;
   align-content: center;
   color: #fff;
@@ -394,6 +401,9 @@ template {
   font-weight: 700;
   color: currentColor;
   padding-right: 16px;
+}
+.arrow-button .arrow {
+  width: 20px;
 }
 
 .yellow {
@@ -430,8 +440,7 @@ template {
   display: inline-block;
 }
 #bg-hero #header .nav-link {
-  font-family: Gilroy, serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #fff;
   text-decoration: none;
@@ -449,8 +458,7 @@ template {
 }
 #bg-hero #header .user-link {
   display: inline-block;
-  font-family: Gilroy, serif;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 700;
   text-decoration: none;
   color: #fff;
@@ -474,15 +482,15 @@ template {
   transform: rotate(90deg);
   -webkit-transform-origin: 5%;
   transform-origin: 5%;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 700;
   margin: 0 0;
 }
 #bg-hero .hero-container .socials .social-text + .social-link {
   margin-top: 66px;
 }
-#bg-hero .hero-container .socials .social-link {
-  padding: 12px 0;
+#bg-hero .hero-container .socials .social-link img {
+  padding: 10px 20px 10px 0;
 }
 #bg-hero .hero-container .introduce {
   flex: 0 0 60%;
@@ -505,7 +513,7 @@ template {
   position: fixed;
   z-index: 11;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(0%, -50%);
 }
 #bg-hero .hero-container .slider .wrapper .slider-list {
   display: flex;
@@ -523,7 +531,7 @@ template {
   color: #fff;
   text-decoration: none;
   padding: 20px 0px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 #bg-hero .hero-container .slider .wrapper .slider-line {
@@ -678,6 +686,18 @@ template {
   text-decoration: none;
   color: #fff;
   padding: 6px 0;
+}
+
+.logo:hover,
+.nav-list-item:hover,
+.header-user:hover,
+.social-link img:hover,
+.footer-nav-list-link:hover {
+  opacity: 0.7;
+}
+
+.arrow-button:hover {
+  opacity: 0.6;
 }
 
 /*# sourceMappingURL=style.css.map */

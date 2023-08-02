@@ -22,9 +22,16 @@
 @font-face {
     font-family: "Gilroy";
     src: url("../fonts/Gilroy-ExtraBold.otf");
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Medium'), url('../fonts/Gilroy-Medium.woff') format('woff');
+    }
 
 .heading-w-rline {
     position: relative;
@@ -49,8 +56,9 @@
 }
 
 .arrow-button {
-    height: 24px;
-    line-height: 24px;
+    width: fit-content;
+    height: 18px;
+    line-height: 18px;
     display: flex;
     align-content: center;
     color: $white-color;
@@ -61,6 +69,9 @@
         font-weight: 700;
         color: currentColor;
         padding-right: 16px;
+    }
+    .arrow{
+        width: 20px;
     }
 
 }
